@@ -1,0 +1,40 @@
+/* Accountancy: own styles on top of the shared frame */
+.ac-lead{font-size:1.08rem;color:var(--soft)}
+.ac-h{font-size:1.15rem;margin:22px 0 4px}
+.grid a{flex-wrap:wrap}.grid a small{white-space:normal;flex-basis:100%}
+.ac-grid a{flex-direction:column;align-items:flex-start;gap:4px}
+@media (min-width:900px){.nav a{padding:9px 8px;font-size:.9rem}}
+.btn.sm{min-height:40px}
+table.ac{width:100%;border-collapse:collapse;font-size:.93rem}
+table.ac caption{caption-side:top;text-align:center;font-weight:700;padding:8px 6px;font-family:var(--font-head)}
+table.ac caption small{font-weight:400;color:var(--soft)}
+table.ac th,table.ac td{padding:6px 9px;vertical-align:top;text-align:left}
+table.ac .n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+table.ac td.to{padding-left:28px}
+table.ac tr.narr td{color:var(--soft);font-style:italic;font-size:.88rem;padding-top:0;border-bottom:1px solid var(--line)}
+table.ac tr.tot td{font-weight:700;border-top:2px solid var(--ink);border-bottom:3px double var(--ink)}
+table.ac .mid{border-left:2px solid var(--ink)}
+table.ac.jr,table.ac.tacc{min-width:520px}
+table.ac.tacc{min-width:640px}
+table.ac.jr td:first-child{white-space:nowrap}
+.prose .tbl{margin:14px 0}
+.pn{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;margin:18px 0}
+.pn a{flex:1 1 220px;border:1px solid var(--line);border-radius:10px;padding:10px 14px;text-decoration:none;background:var(--surface);color:var(--ink);min-height:44px}
+.pn a small{display:block;color:var(--soft);font-size:.82rem}
+.pn a.nx{text-align:right}
+.pq{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px;margin:16px 0}
+.pq-t{font-size:1.15rem;font-weight:600;margin:6px 0 12px}
+.pq h3{margin:12px 0 4px;font-size:1rem}
+.pq .chips{margin:6px 0}
+.pq .chips button{min-height:42px;text-align:left}
+.pq .chips button.good{background:var(--ok);color:var(--accent-ink);border-color:var(--ok)}
+.pq .chips button.bad{background:var(--bad);color:#fff;border-color:var(--bad)}
+.pq .chips button:disabled{cursor:default;opacity:1}
+.pq .result.no{border-color:var(--bad)}
+.pq-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.pq-bar .btn{min-height:46px}
+.gl{margin:14px 0}
+.gl>div{border-bottom:1px solid var(--line);padding:10px 0}
+.gl dt{font-weight:700}.gl dd{margin:2px 0 0}
+.fx td:first-child{font-weight:600;width:38%}
+@media print{.pn,.chips,.pq{display:none!important}table.ac{font-size:.85rem}}
